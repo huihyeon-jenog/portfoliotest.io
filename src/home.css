@@ -1,0 +1,139 @@
+
+@media(max-width:800px){
+    main{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .myPicture{
+        display: flex;
+        justify-content: center;
+    }
+    .myPicture > img{
+        width: 380px;
+        height: 380px;
+        object-fit: fill;
+        border-radius: 50%;
+    }
+    .leftWrap{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mainText > h1{
+        font-size: 48px;
+        margin: 0;
+        text-align: center;
+    } 
+    .mainText > h3{
+        margin: 0 0 30px;
+        text-align: center;
+    }
+    .content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        text-shadow: 1px 1px .5px black;
+        line-height: 130px;
+    }
+}
+@media all and (min-width:801px) and (max-width:990px){
+    .aboutMe, .project, .contact{
+        margin: 10px 10px 0 0;
+    }
+}
+@media(min-width:801px){
+    main{
+        position: relative;
+        height: 410px;
+        margin: 0 0 0 141px;
+        top: 0px;
+    }
+    
+    .leftWrap{
+        position: absolute;
+        left: 400px;
+        top: 0px;
+        height: 380px;
+    }
+    .content{
+        position: absolute;
+        width: 100%;
+        height: 215px;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        text-align: center;
+        text-shadow: 1px 1px .5px black;
+        cursor: pointer;
+        line-height: 130px;   
+    }
+}
+main .mainWrap{
+    position: relative;
+}
+main .myPicture > img{
+    position: relative;
+    left: 0;
+    width: 380px;
+    height: 380px;
+    object-fit: fill;
+    border-radius: 50%;
+}
+main .mainText > h1{
+    font-size: 80px;
+    margin: 0;
+} 
+main .mainText > h3{
+    margin: 0 0 30px;
+}
+
+main .aboutMe > a{
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    font-size: 18px;
+    color: white;
+}
+main .project > a{
+    display: block;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+}
+main .contact > a{
+    display: block;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+}
+main .aboutMe:hover, .project:hover, .contact:hover{
+    opacity: 0.5;
+}
+
+.aboutMe, .project{
+    margin-right: 20px;
+}
+main .aboutMe{
+    width: 130px;
+    height: 130px;
+    min-height: 130px;
+    border-radius: 50%;
+    background: #e8f1f5;
+}
+main .project{
+    width: 130px;
+    height: 130px;
+    min-height: 130px;
+    border-radius: 50%;
+    background:#005691;
+}
+main .contact{
+    width: 130px;
+    height: 130px;
+    min-height: 130px;
+    border-radius: 50%;
+    background: #004a7c;
+}
