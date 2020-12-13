@@ -9,6 +9,7 @@ main{
     .projectBox{
         overflow: hidden;
         margin: 0 auto;
+        
     }
     main .projectBox > img{
         border: 1px solid black;
@@ -22,6 +23,7 @@ main{
     
     main .projectText{
         display: block;
+        width: 80vw;
         font-size: 0.9em;
     }
     main .projectButton > button{
@@ -29,7 +31,12 @@ main{
         display: inline-block;
         width: 10vw;
         height: 5vh;
+        font-size: 12px;
     }
+    main .projectButton > button > a{
+        font-size: 0.2em;
+    }
+    
     
 }
 @media all and (min-width:801px) and (max-width:980px){
