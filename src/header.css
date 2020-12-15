@@ -1,8 +1,4 @@
-*{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-}
+
 html{
     -webkit-text-size-adjust: none;
     height: 100%;
@@ -11,7 +7,6 @@ html{
 body{
     height: auto;
     margin: 0;
-    font-family: Plaa;
     background: #fafafa;
 }
 header{
@@ -80,11 +75,24 @@ header{
         font-size: 43px;
         font-weight: bold;
     }
+    header .menuContainer:after{
+        content: "";
+        display: block;
+        width: 800px;
+        height: 2px;
+        background: #005691;
+        position: absolute;
+        bottom: 0;
+        top: 25px;
+    }
 }
 header .menu > a{
     margin-right: 25px;
 }
 header .menu > a:hover{
+    color:#005691;
+}
+header .menu > a:hover:after{
     color:#005691;
 }
 header .menuContainer > ul{
@@ -93,6 +101,7 @@ header .menuContainer > ul{
     overflow: hidden;
     text-align: right;
 }
+
 header .dropDownHover{
     display: flex;
     justify-content: center;

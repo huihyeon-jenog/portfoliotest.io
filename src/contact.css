@@ -32,9 +32,10 @@
         height: 32px;
     }
 }
-
-
-
+main .contactWrap{
+    position: relative;
+    top: -40px;
+}
 main .contactWrap > h1{
     font-size: 80px;
     margin: 0;

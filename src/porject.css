@@ -5,6 +5,8 @@ main{
 @media(max-width:800px){
     .porjectWrap{
         display: flex;
+        position: relative;
+        top: -20px;
     }
     .projectBox{
         overflow: hidden;
@@ -12,10 +14,10 @@ main{
         
     }
     main .projectBox > img{
-        border: 1px solid black;
         margin: 0 auto;
+        top: -90px;
         width: 80vw;
-        height: 50vh;
+        height: 300px;
         text-align: center;
         object-fit: fill;
         overflow: hidden;
@@ -25,23 +27,36 @@ main{
         display: block;
         width: 80vw;
         font-size: 0.9em;
+        text-align: center;
+    }
+    main .projectButton {
+        display: block;
+        width: 80vw;
+        text-align: center;
     }
     main .projectButton > button{
         position: relative;
         display: inline-block;
         width: 10vw;
-        height: 5vh;
+        height: 18px;
         font-size: 12px;
     }
     main .projectButton > button > a{
         font-size: 0.2em;
+    }
+    .dotWrap{
+        position: absolute;
+        top: -70px;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 10px;
     }
     
     
 }
 @media all and (min-width:801px) and (max-width:980px){
     main .projectBox > img{
-        border: 1px solid black;
         margin: 0 auto;
         width: 40vw;
         height: 50vh;
@@ -70,11 +85,18 @@ main{
         top: 30%;
         left: 80%;
     }
+    .dotWrap{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        height: 10px;
+    }
     
 }
 @media(min-width:981px){
     main .projectBox > img{
-        border: 1px solid black;
         width: 380px;
         height: 380px;
         object-fit: fill;
@@ -83,9 +105,8 @@ main{
         width: 1024px;
         height: 100%;
         position: relative;
-        
         display: flex;
-        margin: 0;
+        margin: 0 0 50px 0;
     }
     main .projectText {
         position: absolute;
@@ -112,6 +133,13 @@ main{
         position: absolute;
         top: 30%;
         left: 80%;
+    }
+    .dotWrap{
+        position: absolute;
+        bottom: -30px;
+        display: flex;
+        justify-content: center;
+        width: 80vw;
     }
 }
 
@@ -167,4 +195,17 @@ main .next{
     from {opacity: .4} 
     to {opacity: 1}
   }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
   
+  .active, .dot:hover {
+    background-color: #717171;
+  }

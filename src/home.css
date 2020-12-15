@@ -1,4 +1,3 @@
-
 @media(max-width:800px){
     main{
         position: relative;
@@ -41,7 +40,7 @@
 }
 @media all and (min-width:801px) and (max-width:990px){
     .aboutMe, .project, .contact{
-        margin: 10px 10px 0 0;
+        display: none;
     }
 }
 @media(min-width:801px){
