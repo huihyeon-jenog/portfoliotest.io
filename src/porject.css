@@ -42,7 +42,8 @@ main{
         font-size: 12px;
     }
     main .projectButton > button > a{
-        font-size: 0.2em;
+        width: 100%;
+        height: 100%;
     }
     .dotWrap{
         position: absolute;
